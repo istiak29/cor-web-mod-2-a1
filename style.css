@@ -1,0 +1,50 @@
+body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+                box-sizing: border-box;
+            }
+
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+
+            .section {
+                box-sizing: border-box;
+                width: 100%;
+                padding: 20px;
+                border: 1px solid black;
+                margin-bottom: 20px;
+            }
+
+            .section-title {
+                position: absolute;
+                top: 0;
+                right: 0;
+                background-color: #3498db;
+                /* Choose your color */
+                color: #fff;
+                /* Choose text color for contrast */
+                padding: 5px 10px;
+                border-bottom-left-radius: 5px;
+            }
+
+            @media (min-width: 768px) {
+                .section {
+                    width: 48%;
+                    /* Two sections side by side */
+                }
+
+                .section:nth-child(3) {
+                    width: 100%;
+                    /* Full width for the third section */
+                }
+            }
+
+            @media (min-width: 992px) {
+                .section {
+                    width: 30%;
+                    /* Three sections side by side */
+                }
+            }
